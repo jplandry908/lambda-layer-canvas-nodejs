@@ -14,13 +14,13 @@ set -e
 
 LAYER_NAME=canvas-nodejs
 LAYER_DESCRIPTION="Cairo backed Mozilla Web Canvas API implementation layer for AWS Lambda"
-LAYER_VERSION=3.1.0
+LAYER_VERSION=3.1.2
 LAYER_AUTHOR="Charoite Lee"
 
 DOT_CHAR="."
 NODE_VERSION=$(node -v)
 NODE_VERSION=${NODE_VERSION:1}
-SEMVER_VERSION=7.7.1
+SEMVER_VERSION=7.7.2
 
 # Remove packaged layer if exists
 if [ -n "$(find . -name 'canvas-nodejs_v*.zip')" ]; then
